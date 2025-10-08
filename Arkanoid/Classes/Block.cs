@@ -1,5 +1,4 @@
-﻿
-namespace Arkanoid
+﻿namespace Arkanoid.Classes
 {
     /// <summary>
     /// 

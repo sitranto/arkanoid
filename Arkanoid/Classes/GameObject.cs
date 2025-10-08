@@ -1,4 +1,4 @@
-﻿namespace Arkanoid
+﻿namespace Arkanoid.Classes
 {
     /// <summary>
     /// Абстрактный класс, являющийся общим для всех игровых объектов.

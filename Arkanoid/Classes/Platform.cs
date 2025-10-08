@@ -1,4 +1,4 @@
-﻿namespace Arkanoid
+﻿namespace Arkanoid.Classes
 {
     /// <summary>
     /// Класс игрового объекта движущейся платформы.

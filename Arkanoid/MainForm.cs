@@ -22,6 +22,7 @@ namespace Arkanoid
             Size = screenBounds.Size;
             BackgroundImage = Properties.Resources.arkanoid_bg;
             DoubleBuffered = true;
+            Cursor.Hide();
 
             KeyDown += (_, _) => { Close(); };
         }
@@ -31,8 +32,19 @@ namespace Arkanoid
         /// </summary>
         private void InitializeGameData()
         {
-            platform = new Platform(200, screenBounds.Height - 50, screenBounds.Width / 10, screenBounds.Height / 50);
+            var objectsHeight = screenBounds.Height / 50;  
+            var blockWidth = screenBounds.Width / 11;
+
+            platform = new Platform(200, screenBounds.Height - 50, screenBounds.Width / 10, objectsHeight);
             gameObjects.Add(platform);
+            for (int row = 0; row < 10; row++)
+            {
+                for (int col = 0; col < 10; col++)
+                {
+                    var block = new Block(col * (blockWidth + blockWidth / 10) + blockWidth / 10, row * (objectsHeight + 10) + 5, blockWidth, objectsHeight, Color.Red);
+                    gameObjects.Add(block);
+                }
+            }
 
             MouseMove += OnMouseMove;
         }

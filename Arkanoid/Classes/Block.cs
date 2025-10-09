@@ -1,7 +1,7 @@
 ﻿namespace Arkanoid.Classes
 {
     /// <summary>
-    /// 
+    /// Класс блока.
     /// </summary>
     public class Block: GameObject
     {

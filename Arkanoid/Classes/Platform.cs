@@ -1,7 +1,7 @@
 ﻿namespace Arkanoid.Classes
 {
     /// <summary>
-    /// Класс игрового объекта движущейся платформы.
+    /// Класс движущейся платформы.
     /// </summary>
     internal class Platform : GameObject
     {

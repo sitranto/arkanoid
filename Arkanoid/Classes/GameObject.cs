@@ -15,5 +15,10 @@
         /// </summary>
         /// <param name="g">Объект типа Graphics, который будет использован для отрисовки.</param>
         public abstract void Draw(Graphics g);
+
+        /// <summary>
+        /// Свойство хитбокса объектов.
+        /// </summary>
+        public RectangleF Bounds => new RectangleF(X, Y, Width, Height);
     }
 }
